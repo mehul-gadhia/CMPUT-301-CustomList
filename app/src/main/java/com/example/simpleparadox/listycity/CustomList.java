@@ -62,6 +62,15 @@ public class CustomList extends ArrayAdapter<City> {
     }
 
     /**
+     * This function will delete the passed in city from the list
+     * @param city
+     */
+    public void deleteCity(City city) {
+        //cities.remove(city);
+        return;
+    }
+
+    /**
      * This function will check if the list has the passed in city
      * @param city
      * @return
