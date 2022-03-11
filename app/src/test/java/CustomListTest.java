@@ -10,13 +10,9 @@ import java.util.ArrayList;
 public class CustomListTest {
     private CustomList list;
 
-    @BeforeAll
-    public void createlist(){
-        list = new CustomList(null, new ArrayList<City>());
-    }
-
     @Test
     public void addCityTest(){
+        list = new CustomList(null, new ArrayList<City>());
         int listSize = list.getCount();
         list.addCity(new City("Halifax", "NS"));
         assertEquals(list.getCount(), listSize+1);
