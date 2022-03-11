@@ -25,6 +25,9 @@ public class CustomList extends ArrayAdapter<City> {
         this.context = context;
     }
 
+    public int getCount() {
+        return cities.size();
+    }
 
     @NonNull
     @Override
@@ -46,10 +49,6 @@ public class CustomList extends ArrayAdapter<City> {
 
         return view;
 
-    }
-
-    public int getCount() {
-        return cities.size();
     }
 
     /**
@@ -77,4 +76,14 @@ public class CustomList extends ArrayAdapter<City> {
     public boolean hasCity(City city) {
         return cities.contains(city);
     }
+
+    /**
+     * This function returns the number of cities in the list
+     * @return
+     */
+    public int countCities() {
+        //return cities.size();
+        return 0;
+    }
+
 }
