@@ -17,4 +17,12 @@ public class CustomListTest {
         list.addCity(new City("Halifax", "NS"));
         assertEquals(list.getCount(), listSize+1);
     }
+
+    @Test
+    public void hasCityTest(){
+        list = new CustomList(null, new ArrayList<City>());
+        City city1 = new City("Halifax", "NS");
+        list.addCity(city1);
+        assertTrue(list.hasCity(city1));
+    }
 }
